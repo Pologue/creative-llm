@@ -892,7 +892,8 @@ def setup_llm(llm_type: str, **kwargs) -> LLMInterface:
         return OpenAILLM(
             model=kwargs.get('model', 'gpt-4'),
             api_key=api_key,
-            temperature=kwargs.get('temperature', 0.7)
+            temperature=kwargs.get('temperature', 0.7),
+            base_url=kwargs.get("base_url", "https://api.openai.com/v1")
         )
     
     elif llm_type == "anthropic":
@@ -954,6 +955,7 @@ def main():
         model = default_models.get(llm_type)
     
     api_key = config.get('llm', {}).get('api_keys', {}).get(llm_type)
+    base_url = config.get("llm", {}).get("base_url", "https://api.openai.com/v1")
     if not api_key:
         env_vars = {
             'openai': 'OPENAI_API_KEY',
@@ -1005,7 +1007,8 @@ def main():
         llm_type,
         model=model,
         api_key=api_key,
-        temperature=temperature
+        temperature=temperature,
+        base_url=base_url
     )
     
     # Run benchmark
