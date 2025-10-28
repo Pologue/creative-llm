@@ -1,0 +1,1185 @@
+{
+  "run_id": "20251029_000013",
+  "llm_name": "OpenAI(tinyllama)",
+  "n_samples": 30,
+  "n_queries_per_sample": null,
+  "query_multiplier": 1.0,
+  "seed": 42,
+  "timestamp": "2025-10-29T00:09:31.727082",
+  "results": [
+    {
+      "observation_set_id": "n2_inputs_00_01_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.6,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "x AND y",
+        "x AND y (used in four different expressions above)",
+        "x AND y",
+        "(x OR y) AND NOT x",
+        "(x AND y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3031,
+        "completion_tokens": 2089,
+        "total_tokens": 5120
+      },
+      "cost": 0.09298000000000001,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_01_outputs_0",
+      "n_observations": 1,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 3,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2,
+      "valid_rate": 0.6,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "x AND y",
+        "(x AND y) OR (x OR y) AND NOT x (LAST 2 MINUTES)",
+        "(x AND y) OR (x OR y) AND NOT x (LAST 2 MINUTES)",
+        "x AND (y AND z)",
+        "(x AND y) OR (x OR y) AND NOT x"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "(x AND y) OR (x OR y) AND NOT x (LAST 2 MINUTES)",
+        "(x AND y) OR (x OR y) AND NOT x (LAST 2 MINUTES)"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3046,
+        "completion_tokens": 1842,
+        "total_tokens": 4888
+      },
+      "cost": 0.08572,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 2,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.4,
+      "valid_rate": 0.4,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "\" followed by the expression",
+        "x AND y",
+        "\" followed by the expression",
+        "- Use ONLY these operators: AND, OR",
+        "x AND y"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3021,
+        "completion_tokens": 1982,
+        "total_tokens": 5003
+      },
+      "cost": 0.08966999999999999,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2,
+      "valid_rate": 0.2,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "According to the provided instructions, the Boolean function with variables x and y is (x=0, y=1) and the desired output is the expression \"x AND y\". To generate this expression, we follow these 5 steps:",
+        "According to the provided instructions, the Boolean function with variables x and y is (x=0, y=1) and the desired output is the expression \"x AND y\"",
+        "Great! Let's follow the guidelines established earlier and generate a single Boolean expression that matches all observed observations guaranteed to be consistent using the operators AND and OR",
+        "x AND y",
+        "(x OR y) AND NOT x"
+      ],
+      "valid_hypotheses": [
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3341,
+        "completion_tokens": 1604,
+        "total_tokens": 4945
+      },
+      "cost": 0.08152999999999999,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0111",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "Here's a correct CAS expression generation script using LaTeX formatting, and tools for structural uniqueness and distributivity:",
+        "x AND y:"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1259,
+        "completion_tokens": 733,
+        "total_tokens": 1992
+      },
+      "cost": 0.03458,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_10_outputs_1",
+      "n_observations": 1,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "(x AND y) OR z",
+        "(x AND y) OR z",
+        "Below is an example of the validation exercise based on the input boolean function with variables \"x\" and \"y\" to determine the single Boolean expression that meets all the requirements",
+        "(x AND y) OR z",
+        "(x AND y) OR z"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3031,
+        "completion_tokens": 1710,
+        "total_tokens": 4741
+      },
+      "cost": 0.08160999999999999,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_001",
+      "n_observations": 3,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 4,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.8,
+      "valid_rate": 0.8,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "xANDy",
+        "x AND y",
+        "(x AND y) AND z"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "xANDy",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3067,
+        "completion_tokens": 1954,
+        "total_tokens": 5021
+      },
+      "cost": 0.08929,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_10_outputs_0",
+      "n_observations": 1,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 5,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "(x AND y)",
+        "x AND y"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "(x AND y)",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 2939,
+        "completion_tokens": 1204,
+        "total_tokens": 4143
+      },
+      "cost": 0.06551,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_010",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.3333333333333333,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.3333333333333333,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "- Idempotence: First, we check if the expression is idempotent -- that is, if its second component is the same expression repeatedly applied to itself. The expression is idempotent if and only if its pattern matches the following token (``AND (conjunction)``):",
+        "x AND y",
+        "- Idempotence: The expression is idempotent if and only if its pattern matches the following token (``AND (conjunction)``:"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1941,
+        "completion_tokens": 1131,
+        "total_tokens": 3072
+      },
+      "cost": 0.05334,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_011",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.3333333333333333,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "x AND y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1823,
+        "completion_tokens": 1203,
+        "total_tokens": 3026
+      },
+      "cost": 0.05432000000000001,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0011",
+      "n_observations": 4,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 2,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.6666666666666666,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.6666666666666666,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "(x AND y) OR (x OR y)",
+        "x AND y",
+        "At the top level, suppose we have the input variables \"x\" and \"y\" in the Boolean function. Observations (X input -> Y output)* are generated from the following allowed operators: AND (conjunction), OR (disjunction)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "(x AND y) OR (x OR y)",
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1878,
+        "completion_tokens": 1025,
+        "total_tokens": 2903
+      },
+      "cost": 0.04953,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_01_outputs_1",
+      "n_observations": 1,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "Welcome to the challenge! With partial observations of a Boolean function with variables x and y, you are tasked with generating a single Boolean expression that meets all observational constraints",
+        "Dear Professor [Name]",
+        "Dear Professor [Name]",
+        "Welcome to the challenge! With partial observations of a Boolean function with variables x and y, you are tasked with generating a single Boolean expression that meets all observational constraints",
+        "Dear Professor [Name]"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3107,
+        "completion_tokens": 1912,
+        "total_tokens": 5019
+      },
+      "cost": 0.08843000000000001,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_11",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "Recognizing all dependencies and graphically representing the chosen variable and its input values gives us insight into the complexity of the underlying Causal Inference task. Here is a potential Causal Inference and Graph Theory task specification with all the information needed:",
+        "I. Partial Observations and Observations Generated",
+        "`I. Partial Observations and Observations Generated",
+        "I. Partial Observations and Observations Generated",
+        "Expressions that satisfy all these requirements will be considered to be valid Boolean expressions for future use. The above-provided partial observations of a Boolean function with variables 'x' and 'y' are any occurrence where 'x' equals '1' and 'y' equals '0'. First, we check if all the given observations (input values) match the Boolean function. Afterwards, we follow the rules to generate a single Boolean expression that satisfies all the requirements"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3248,
+        "completion_tokens": 1872,
+        "total_tokens": 5120
+      },
+      "cost": 0.08864,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_10_outputs_10",
+      "n_observations": 2,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.3333333333333333,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.3333333333333333,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "I do not have access to your inputs and observations. However, I can provide an example of how to create a valid expression using the given set of constraints:",
+        "I do not have access to your inputs and observations. However, I can provide an example of how to create a valid expression using the given set of constraints:",
+        "x AND y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1871,
+        "completion_tokens": 1004,
+        "total_tokens": 2875
+      },
+      "cost": 0.04883,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0101",
+      "n_observations": 4,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "3 AND 5",
+        "(x OR y) AND NOR(x, y)",
+        "3 AND 5"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1876,
+        "completion_tokens": 865,
+        "total_tokens": 2741
+      },
+      "cost": 0.04471,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_00_outputs_0",
+      "n_observations": 1,
+      "n_ground_truths": 10,
+      "n_queries": 10,
+      "n_valid": 3,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.1,
+      "valid_rate": 0.3,
+      "novelty_rate": 0.1,
+      "recovery_rate": 0.1,
+      "all_hypotheses": [
+        "0 AND (x AND y)",
+        "0 AND (X AND Y)",
+        "0 AND (X AND Y)",
+        "Let's take the \"x=0, y=0\" example to see how the rejection rule applies. First, we can generate the term \"0 AND (x AND y)\" using the OR operator. This term would match any observation, regardless of how we order the variables or manipulate them. So, we can use this term as a candidate for a single Boolean expression",
+        "(x AND y) OR (X AND Y)",
+        "(x AND y) OR (X AND Y)",
+        "0 AND (X AND Y)",
+        "0 AND (x AND y) = 0 OR (X AND Y) = 0",
+        "0 AND (x AND y)",
+        "x OR y"
+      ],
+      "valid_hypotheses": [
+        "Let's take the \"x=0, y=0\" example to see how the rejection rule applies. First, we can generate the term \"0 AND (x AND y)\" using the OR operator. This term would match any observation, regardless of how we order the variables or manipulate them. So, we can use this term as a candidate for a single Boolean expression",
+        "0 AND (x AND y) = 0 OR (X AND Y) = 0",
+        "x OR y"
+      ],
+      "unique_valid_expressions": [
+        "x OR y"
+      ],
+      "unique_all_expressions": [
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 6712,
+        "completion_tokens": 3035,
+        "total_tokens": 9747
+      },
+      "cost": 0.15816999999999998,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_10_11_outputs_001",
+      "n_observations": 3,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 2,
+      "n_unique_valid": 2,
+      "n_unique_all": 3,
+      "n_recovered_gts": 2,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.6,
+      "valid_rate": 0.4,
+      "novelty_rate": 0.6,
+      "recovery_rate": 0.4,
+      "all_hypotheses": [
+        "x = y",
+        "\"AND (x=1, y=1) = 1\"",
+        "x AND y",
+        "XOR(xANDy, xORz)",
+        "x OR y"
+      ],
+      "valid_hypotheses": [
+        "x = y",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x = y",
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x = y",
+        "x AND y",
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3111,
+        "completion_tokens": 1736,
+        "total_tokens": 4847
+      },
+      "cost": 0.08319000000000001,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_01_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2,
+      "valid_rate": 0.2,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "python",
+        "python",
+        "NOT (x AND y)",
+        "(x AND y)",
+        "(x OR y) AND NOT x"
+      ],
+      "valid_hypotheses": [
+        "(x AND y)"
+      ],
+      "unique_valid_expressions": [
+        "(x AND y)"
+      ],
+      "unique_all_expressions": [
+        "(x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 2996,
+        "completion_tokens": 1910,
+        "total_tokens": 4906
+      },
+      "cost": 0.08726,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "(x AND y) OR z",
+        "(x AND y) OR z"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1214,
+        "completion_tokens": 641,
+        "total_tokens": 1855
+      },
+      "cost": 0.03137,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_000",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "Certainly! Based on the given input and constraints, here are three possible expressions that would meet the requirements for generating a single Boolean expression:",
+        "Certainly!"
+      ],
+      "valid_hypotheses": [
+        "Certainly! Based on the given input and constraints, here are three possible expressions that would meet the requirements for generating a single Boolean expression:"
+      ],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1236,
+        "completion_tokens": 659,
+        "total_tokens": 1895
+      },
+      "cost": 0.03213,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_10_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 2,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.4,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "True AND False",
+        "Allowed operators: AND, OR",
+        "True AND False",
+        "True AND False",
+        "followed by the expression. Examples of correct format:"
+      ],
+      "valid_hypotheses": [
+        "Allowed operators: AND, OR",
+        "followed by the expression. Examples of correct format:"
+      ],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3014,
+        "completion_tokens": 2042,
+        "total_tokens": 5056
+      },
+      "cost": 0.09140000000000001,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_001",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "python",
+        "python"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1208,
+        "completion_tokens": 796,
+        "total_tokens": 2004
+      },
+      "cost": 0.03596,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_10_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "I do not have the capability to generate code without being able to provide a complete image of the input variables, but I can provide an example for the input variables and the intended output expression in the format required",
+        "((x AND y) OR (x OR y)) AND (NOT x)"
+      ],
+      "valid_hypotheses": [
+        "I do not have the capability to generate code without being able to provide a complete image of the input variables, but I can provide an example for the input variables and the intended output expression in the format required"
+      ],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 703,
+        "total_tokens": 1926
+      },
+      "cost": 0.03332,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 10,
+      "n_queries": 10,
+      "n_valid": 2,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2,
+      "valid_rate": 0.2,
+      "novelty_rate": 0.1,
+      "recovery_rate": 0.1,
+      "all_hypotheses": [
+        "Allowed operators: AND, OR",
+        "Allowed operators: AND, OR",
+        "(x OR y) AND NOT x",
+        "NOT x AND y",
+        "Let us call the Boolean function denoted as F(x, y) with variables x and y, and denote the given set of observations as O_1, O_2, \\dots O_n. Our task is to generate a single Boolean expression that is consistent with all those observations (i.e., the expression should match all but one of those observations)",
+        "Given the partial observations and allowed operators, the task is to generate a single Boolean expression that matches all given observations. The requirements for the expression are as follows:",
+        "x AND y",
+        "Prior Expressions Generated:",
+        "x AND y",
+        "(x OR y) AND NOT x"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 6738,
+        "completion_tokens": 2799,
+        "total_tokens": 9537
+      },
+      "cost": 0.15135,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_10_outputs_11",
+      "n_observations": 2,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "{expression}",
+        "x AND y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 551,
+        "total_tokens": 1735
+      },
+      "cost": 0.02837,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_011",
+      "n_observations": 3,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.2,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "Let's define the Boolean function that we're working with:",
+        "x AND y",
+        "Let's define the Boolean function that we're working with:",
+        "Let's define the Boolean function that we're working with:",
+        "Not (x AND y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3144,
+        "completion_tokens": 1565,
+        "total_tokens": 4709
+      },
+      "cost": 0.07839,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_10_11_outputs_011",
+      "n_observations": 3,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "To generate a single Boolean expression in the given format that is consistent with all given observations, we follow the rules outlined in the original problem statement. Let's rewrite the Premio tasks into the restriction-and-goal framework and rephrase them with the help of the outline provided in the original problem statement:",
+        "These are the brief instructions to generate a single Boolean expression that is consistent with all given observations",
+        "Instructor: Dr. Alexei Ivanov, Assistant Professor",
+        "Pomp Awards 2021 s\u00e3o as competi\u00e7\u00f5es docentes e professores de artigos sobre harmoniza\u00e7\u00e3o e tabeles de problemas de banco de dados nos continentes latino-americano e saber est\u00e1 desenvolvido ao longo do ano seguinte. Isso significa que os eventos s\u00e3o prontos para as horas do lunes, 29 de novembro, no ano de 2021",
+        "The Boolean function x = 0 and y = 0 is compliant with all given observations as follows:"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3464,
+        "completion_tokens": 1656,
+        "total_tokens": 5120
+      },
+      "cost": 0.08432,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_11_outputs_11",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 2,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.6,
+      "valid_rate": 0.4,
+      "novelty_rate": 0.4,
+      "recovery_rate": 0.2,
+      "all_hypotheses": [
+        "x OR y",
+        "x AND y",
+        "x OR y",
+        "X OR Y",
+        "x AND y`. The output format is plain text and does not use any marked language or unusual constructs. The example response output is:\""
+      ],
+      "valid_hypotheses": [
+        "x OR y",
+        "x OR y"
+      ],
+      "unique_valid_expressions": [
+        "x OR y"
+      ],
+      "unique_all_expressions": [
+        "x OR y",
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3002,
+        "completion_tokens": 1473,
+        "total_tokens": 4475
+      },
+      "cost": 0.07421,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_101",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 3,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.3333333333333333,
+      "recovery_rate": 0.3333333333333333,
+      "all_hypotheses": [
+        "1 AND (y AND y)",
+        "1 AND (y AND y)",
+        "1 AND (y AND y)"
+      ],
+      "valid_hypotheses": [
+        "1 AND (y AND y)",
+        "1 AND (y AND y)",
+        "1 AND (y AND y)"
+      ],
+      "unique_valid_expressions": [
+        "1 AND (y AND y)"
+      ],
+      "unique_all_expressions": [
+        "1 AND (y AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1838,
+        "completion_tokens": 1152,
+        "total_tokens": 2990
+      },
+      "cost": 0.05294,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_011",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "((x AND y) OR z) AND (NOT x OR NOT y)",
+        "((x AND y) OR z) AND (NOT x OR NOT y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1223,
+        "completion_tokens": 531,
+        "total_tokens": 1754
+      },
+      "cost": 0.028159999999999998,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    }
+  ],
+  "total_token_usage": {
+    "prompt_tokens": 79786,
+    "completion_tokens": 43379,
+    "total_tokens": 123165
+  },
+  "total_cost": 2.09923,
+  "total_errors": 0,
+  "error_types": {}
+}
