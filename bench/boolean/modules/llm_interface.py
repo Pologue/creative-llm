@@ -216,7 +216,8 @@ class OpenAILLM(LLMInterface):
         model: str = "gpt-4",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 40960
+        max_tokens: int = 40960,
+        base_url: str = "https://api.openai.com/v1"
     ):
         """
         Initialize OpenAI LLM interface.
@@ -242,7 +243,7 @@ class OpenAILLM(LLMInterface):
             if not api_key:
                 raise ValueError("OpenAI API key must be provided or set as OPENAI_API_KEY environment variable")
         
-        self.client = openai.OpenAI(api_key=api_key)
+        self.client = openai.OpenAI(api_key=api_key, base_url=base_url)
     
     def query(self, prompt: str) -> str:
         """Query OpenAI API."""
