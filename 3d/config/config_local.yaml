@@ -1,0 +1,17 @@
+llm:
+  type: local
+  models:
+    openrouter: Null
+    openai: Null
+    anthropic: Null
+    local: "/opt/data/private/FYP33_OYXX/LLaMA-Factory/output/qwen3_Thinking_lora_sft_5epoch" # "/opt/data/private/FYP33_OYXX/MODEL/Qwen/Qwen3-4B-Instruct-2507"
+  api_keys:
+    openrouter: "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"
+    openai: ""
+    anthropic: ""
+  temperature: 0.7
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"
