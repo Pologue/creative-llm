@@ -1,0 +1,14 @@
+llm:
+  type: baidu  
+  models:
+    baidu: qwen3-14b
+  api_keys:
+    baidu: "yourapikey"
+  temperature: 0.7
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"
+
+
