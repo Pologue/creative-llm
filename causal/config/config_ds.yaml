@@ -1,0 +1,17 @@
+llm:
+  type: openrouter
+  models:
+    openrouter: "tngtech/deepseek-r1t2-chimera:free"
+    openai: Null
+    anthropic: Null
+  api_keys:
+    openrouter: "yourapikey"
+    openai: ""
+    anthropic: ""
+  temperature: 0.7
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"
+
