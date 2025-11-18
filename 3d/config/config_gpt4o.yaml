@@ -6,7 +6,7 @@ llm:
     anthropic: Null
     local: Null
   api_keys:
-    openrouter: "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"
+    openrouter: ""
     openai: ""
     anthropic: ""
   temperature: 0.7
@@ -15,9 +15,3 @@ benchmark:
   checkpoint: "checkpoints"
   verbose: true
   output_pattern: "results/{dataset_name}_{model}.json"
-
-# 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
-# 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
-# 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
-# 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
-# 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
